@@ -4,16 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello im Francesco Savino and this is my personal portfolio">
-    <meta name="author"content="Francesco Savino">
-    <meta name="robots" content="index, follow">
     <title>Portfolio-Francesco Savino</title>
     <style>
         * {
             font-family: "roboto", sans-serif;
         }
-
-
 
         body {
             background-color: rgb(3, 9, 21);
@@ -25,23 +20,20 @@
 
         header {
             font-size: 40px;
-            position: relative;
-            top: 15px;
-            left: 100px;
-
-
-        }
-
-        .margine {
-            background-color: #1e1d22;
-            height: 105px;
-            width: 1900px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgb(3, 9, 21);
+            padding: 20px 100px;
+            box-sizing: border-box;
         }
 
         nav {
             position: absolute;
-            top: 0px;
-            left: 400px;
+            top: 20px;
+            left: 500px;
 
         }
 
@@ -54,13 +46,14 @@
 
         nav a:hover {
             color: #3d8aaa;
-            text-decoration: underline;
+            font-size: 30px;
+            font-weight:bold;
         }
 
 
         #img img {
 
-            box-shadow: 0 0 60px #3d8aaa;
+            box-shadow: 0 0 60px #00d4fa;
             border-radius: 50%;
             height: 300px;
             position: absolute;
@@ -85,13 +78,22 @@
             background-color: rgb(3, 9, 21);
         }
 
+        #profile1 {
+            position: relative;
+            top: 50px;
+            left: 20%;
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(3, 9, 21);
+        }
+
         .main {
             background-color: rgb(3, 9, 21);
             position: relative;
             top: 30px;
             left: -8px;
             width: 1490px;
-            height: 680px;
+            height: 750px;
         }
 
         .button {
@@ -100,7 +102,8 @@
             padding: 15px;
             border-radius: 10px;
             width: 110px;
-            border: 3px solid #3d8aaa;
+            border: 3px solid #00d4fa;
+
         }
 
         .button a {
@@ -111,10 +114,98 @@
         }
 
         .button:hover {
-            box-shadow: 0 0 20px #3d8aaa;
+            box-shadow: 0 0 20px #00d4fa;
+
         }
 
-    
+        .contenitore img {
+            padding: 40px;
+            border-radius: 40%;
+            height: 90px;
+            width: 90px;
+            filter: grayscale(100%);
+
+        }
+
+        .contenitore img:hover {
+            filter: none;
+
+        }
+
+        .contenitore {
+            position: relative;
+            top: -30px;
+            left:250px;
+        }
+
+        .loader {
+            color: rgb(254, 252, 252);
+            box-sizing: content-box;
+            display: flex;
+        }
+
+        .words {
+            height: 40px;
+            overflow: hidden;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: fit-content;
+        }
+
+        .word-list {
+            display: flex;
+            flex-direction: column;
+            animation: animate 8s linear infinite;
+        }
+
+        .word {
+            color: #00d4fa;
+            font-weight: bold;
+            font-size: 24px;
+            height: 40px;
+        }
+
+
+
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-40px);
+            }
+
+            45% {
+                transform: translateY(-40px);
+            }
+
+            50% {
+                transform: translateY(-80px);
+            }
+
+            70% {
+                transform: translateY(-80px);
+            }
+
+            75% {
+                transform: translateY(-120px);
+            }
+
+            95% {
+                transform: translateY(-120px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -122,7 +213,7 @@
 
     <header>
 
-        <b><span style="color:#3d8aaa;">Port<span style="color: white;">folio</span></span></b>
+        <b><span style="color: #00d4fa;">Port<span style="color: white;">folio</span></span></b>
         <nav><a href="index.html">Home</a><a href="#about">about</a><a href="skill.html">skill</a><a
                 href="contact.html">contact</a></nav>
     </header>
@@ -130,15 +221,45 @@
         <div id="profile">
             <div id="text">
                 <p>Hello world! I'm</p>
-                <p style="font-weight: bold;color:#3d8aaa;font-size: 40px">Crookedog</p>
+                <p style="font-weight: bold;color:#00d4fa;font-size: 40px">Crookedog</p>
                 <p>I am a high school student studying computer science. <br>and this is my </p>
-                <p style="font-weight: bold;color:#3d8aaa;font-size: 40px">Web Site</p>
+                <p style="font-weight: bold;color:#00d4fa;font-size: 40px">Web Site</p>
             </div>
-            <div id="img"><img src="myimg.jpg" alt="ca"></div>
+            <div id="img"><img src="myimg.jpg" alt="img_profile"></div>
             <div class="button" style="position:absolute;top:370px;left:60px"><a href="">See more</a></div>
             <div class="button" style="position:absolute;top:370px;left:260px"><a href="">contact me</a></div>
         </div>
     </div>
+    <div class="margine"></div>
+    <div class="main" id="about">
+        <div id="profile1">
+            <div id="text">
+                <h1 style="color: #00d4fa;">About Me</h1>
+                <p>Hi! I'm <span style="color: #00d4fa; font-size: 25px;">Francesco Savino,</span>
+                <p>but you can call me Crookedog</p>
+                </p>
+                <p>I'm a high school student at Voltadegemmis. <br><br> I enjoy programming and aspire to
+                    become an ethical hacker.</p>
+                <div class="loader">
+                    <p>I'm familiar with:</p>
+                    <div class="words">
+                        <div class="word-list">
+                            <div class="word">Python</div>
+                            <div class="word">C++</div>
+                            <div class="word">Html</div>
+                            <div class="word">Css</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="img"><img style="left:70%;" src="myimg.jpg" alt="img_profile"></div>
+        </div>
+        <div class="contenitore"><img src="html.png" alt="html-logo"><img src="css.png" alt=""><img src="python.png"
+                alt=""><img src="c++.png" alt=""></div>
+    </div>
+    </div>  
+
+
 </body>
 
 </html>
