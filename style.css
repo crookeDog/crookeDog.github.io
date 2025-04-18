@@ -1,0 +1,51 @@
+* {
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(3, 9, 21);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+header {
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(3, 9, 21);
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+
+}
+
+nav a {
+    padding: 30px;
+    text-decoration: none;
+    color: #faf5ee;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: #3d8aaa;
+    font-size: 30px;
+    font-weight: bold;
+}
+.main {
+    background-color: rgb(3, 9, 21);
+    position: relative;
+    top: 30px;
+    left: -8px;
+    width: 1490px;
+    height: 750px;
+}
