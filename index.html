@@ -1,3 +1,4 @@
+0
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,13 +132,30 @@
             padding: 5px;
             height: 300px;
             width: 350px;
+            text-decoration: none;
 
         }
-        .minibox img{
+
+        .minibox img {
             height: 200px;
             width: 350px;
+            border-radius: 10px;
         }
-        
+
+        .minibox:hover {
+            opacity: 100%;
+            box-shadow: 0 0 20px grey;
+        }
+
+        .minibox p {
+            text-align: center;
+            position: relative;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+
+        }
+
         @keyframes animate {
             0% {
                 transform: translateY(0);
@@ -229,16 +247,17 @@
     </div>
     <div class="main">
 
-        <h1 id="projects"style="text-align: center;color: #00d4fa;font-size: 50px;;">Here my progects</h1>
+        <h1 id="projects" style="text-align: center;color: #00d4fa;font-size: 50px;;">Here my progects</h1>
         <div class="box">
-            <div class="minibox">
-                <img src="ChatGPT Image 17 apr 2025, 16_03_37.png" alt="">
-            </div>
-            <div class="minibox"style="left:365px"></div>
-            <div class="minibox"style="left:730px"></div>
-            <div class="minibox"style="top:315px"></div>
-            <div class="minibox"style="top:315px;left:365px"></div>
-            <div class="minibox"style="top:315px;left:730px"></div>
+            <a class="minibox" href="prog1.html">
+                <img src="project.png" alt="">
+                <p>Gym Bot</p>
+            </a>
+            <a class="minibox" style="left:365px" href="progect1"></a>
+            <a class="minibox" style="left:730px"></a>
+            <a class="minibox" style="top:315px"></a>
+            <a class="minibox" style="top:315px;left:365px"></a>
+            <a class="minibox" style="top:315px;left:730px" href=""></a>
 
         </div>
 
