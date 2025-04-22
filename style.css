@@ -1,13 +1,18 @@
 * {
-    font-family: "roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(3, 9, 21);
+    background: #001845;
+    background: linear-gradient(90deg, rgba(0, 24, 69, 1) 0%, rgba(0, 18, 51, 1) 35%, rgba(51, 65, 92, 1) 100%);
+
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
+    color: #f0f0f0;
 }
 
 header {
@@ -17,35 +22,38 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgb(3, 9, 21);
     padding: 20px 100px;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 nav {
     position: absolute;
     top: 20px;
     left: 500px;
-
 }
 
 nav a {
     padding: 30px;
     text-decoration: none;
-    color: #faf5ee;
+    color: #f0f0f0;
     font-size: 25px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #3d8aaa;
-    font-size: 30px;
+    color: #0466c8;
+    transform: scale(1.1);
     font-weight: bold;
 }
+
 .main {
-    background-color: rgb(3, 9, 21);
     position: relative;
     top: 30px;
-    left: -8px;
-    width: 1490px;
+    left: 0;
+    width: 100%;
+    max-width: 1490px;
+    margin: 0 auto;
     height: 750px;
 }
