@@ -2,73 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymBot-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .profile {
-            position: relative;
-            left: 7%;
-            top: 100px;
-            background-color: grey;
-            border-radius: 20px;
-            opacity: 80%;
-            width: 1300px;
-            height: 600px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymBot-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: Arial, sans-serif;
+    }
 
-        .profile img {
-            position: relative;
-            left: 50%;
-            height: 400px;
-            width: 600px;
-            filter: drop-shadow(0px 10px 20px black);
-        }
-        #pulsanti img{
-            height:70px;
-            width: 70px;
-            border-radius:50%;
-            filter:drop-shadow(0px 0px 0px);
-            left:50px;
-            bottom: 40px;
-            
-        }
-        #pulsanti a{
-            padding: 30px;
-        }
-        #pulsanti a:hover{
-            filter: drop-shadow(0px 0px 15px white);
+    header {
+      padding: 20px;
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        }
-    </style>
+    header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      color: #00d4fa;
+    }
+
+    .profile {
+      position: relative;
+      margin: 100px auto;
+      background-color: grey;
+      border-radius: 20px;
+      opacity: 0.8;
+      width: 90%;
+      max-width: 1300px;
+      height: 600px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .profile h1 {
+      color: white;
+      margin-left: 30px;
+    }
+
+    .profile img {
+      height: 400px;
+      width: 600px;
+      filter: drop-shadow(0px 10px 20px black);
+      float: right;
+      margin-right: 30px;
+    }
+
+    .profile p {
+      color: white;
+      font-size: 20px;
+      line-height: 35px;
+      max-width: 600px;
+      margin-left: 30px;
+      margin-top: 50px;
+    }
+
+    #pulsanti {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+    }
+
+    #pulsanti a {
+      padding: 10px;
+    }
+
+    #pulsanti img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      filter: drop-shadow(0px 0px 0px);
+      transition: filter 0.3s;
+    }
+
+    #pulsanti a:hover img {
+      filter: drop-shadow(0px 0px 15px white);
+    }
+  </style>
 </head>
 
 <body>
-    <header>
 
-        <b><span style="color: #00d4fa;">Port<span style="color: white;">folio</span></span></b>
-        <nav><a href="index.html">Home</a><a href="index.html#about">About</a><a
-                href="index.html#projects">Projects</a><a href="contact.html">Contact</a></nav>
-    </header>
-    <div class="main">
-        <div class="profile">
-            <br>
-            <h1 style="color: white;position:relative;left:200px;">GymBot</h1>
-            <img src="projectNobackground.png" alt="progect-img">
-            <p style="color: white; position:absolute; left:30px; top: 120px;font-size: 20px; line-height: 35px;">GymBot
-                is a personal fitness assistant designed to help users <br> track workouts, monitor progress, and stay
-                motivated. <br> It offers features like customizable workout plans,<br> progress tracking, and
-                reminders, all
-                within an intuitive. <br> Built with a focus on user engagement,<br> GymBot aims to make fitness
-                routines more manageable and <br> enjoyable.</p>
-            <div id="pulsanti">
-                <a href="index.html#projects"><img src="back.png" alt="back" style="padding-right: 120px;"></a>
-                <a href="https://t.me/Gym_Brosky_bot"><img src="telegram.png" alt="telegram-bot"></a>
-                <a href="https://github.com/crookeDog/GymBot"><img src="github.png" alt="github-project"></a>
-            </div>
+  <header>
+    <b><span style="color: #00d4fa;">Port<span style="color: white;">folio</span></span></b>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-        </div>
+  <div class="main">
+    <div class="profile">
+      <h1>GymBot</h1>
+      <img src="projectNobackground.png" alt="project-img">
+      <p>
+        GymBot is a personal fitness assistant designed to help users<br>
+        track workouts, monitor progress, and stay motivated.<br>
+        It offers features like customizable workout plans,<br>
+        progress tracking, and reminders, all within an intuitive UI.<br>
+        Built with a focus on user engagement,<br>
+        GymBot aims to make fitness routines more manageable and enjoyable.
+      </p>
+
+      <div id="pulsanti">
+        <a href="index.html#projects"><img src="back.png" alt="back"></a>
+        <a href="https://t.me/Gym_Brosky_bot"><img src="telegram.png" alt="telegram-bot"></a>
+        <a href="https://github.com/crookeDog/GymBot"><img src="github.png" alt="github-project"></a>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
