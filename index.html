@@ -139,6 +139,8 @@
 
         .minibox:hover {
             box-shadow: 0 0 20px #979dac;
+            scale: 1.03;
+
         }
 
         .minibox p {
@@ -168,26 +170,33 @@
             right: 20px;
             background: linear-gradient(to right, #0077b6, #00b4d8, #90e0ef, #00b4d8, #0077b6, #00b4d8, #caf0f8);
             -webkit-background-clip:text;
-            -webkit-text-fill-color:transparent;
-            background-clip: unset;
+            -webkit-text-fill-color: transparent;
+            
 
         }
         #link{
             position: absolute;
-            bottom:66%;
-            left: 150px;
+            bottom:10%;
+            left: 13px;
             text-decoration: none;
-            padding: 5px;
-            padding-left: 20px;
-            padding-right: 20px;
-            background: linear-gradient(to right, #0077b6, #00b4d8, #90e0ef, #00b4d8, #0077b6, #00b4d8, #caf0f8);
+            background: linear-gradient(to right, #0077b6, #00b4d8, #00b4d8, #0077b6, #00b4d8);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            background-clip: unset;
-            background-color: rgba(151, 157, 172, 0.5);
-
-            border-radius: 40px;
             font-size: 25px;
+        }
+        #buttonlink {
+            position: absolute;
+            bottom: 66%;
+            left: 160px;
+            height: 40px;
+            width: 130px;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255, 0.599);
+            box-shadow: 0 0 20px #0077b6;
+        }
+        #buttonlink:hover{
+            scale: 1.2;
+            
         }
         
 
@@ -237,14 +246,14 @@
 
         <b><span style="color: #0466c8;">Port<span style="color: white;">folio</span></span></b>
         <nav><a href="index.html">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a
-                href="contact.html">Contact</a></nav>
+                href="#contact">Contact</a></nav>
     </header>
     <div class="main">
         <a href="#about" class="fullscreen-link">
             <div class="home">
                 <h1>Welcome To My</h1><br>
                 <h1 class="rainbow-text">Portfolio Website</h1>
-                <a id="link"href="#about">see more</a>
+                <div id="buttonlink"><a id="link"href="#about">see more</a></div>
             </div>
         </a>
     </div>
@@ -307,6 +316,7 @@
         </div>
 
     </div>
+    <div class="main" id="contact"></div>
 
 </body>
 
