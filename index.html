@@ -166,17 +166,18 @@
         .rainbow-text {
             display: inline-block;
             position: relative;
-            bottom:110px;
+            bottom: 110px;
             right: 20px;
             background: linear-gradient(to right, #0077b6, #00b4d8, #90e0ef, #00b4d8, #0077b6, #00b4d8, #caf0f8);
-            -webkit-background-clip:text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            
+
 
         }
-        #link{
+
+        #link {
             position: absolute;
-            bottom:10%;
+            bottom: 10%;
             left: 13px;
             text-decoration: none;
             background: linear-gradient(to right, #0077b6, #00b4d8, #00b4d8, #0077b6, #00b4d8);
@@ -184,6 +185,7 @@
             -webkit-background-clip: text;
             font-size: 25px;
         }
+
         #buttonlink {
             position: absolute;
             bottom: 66%;
@@ -191,14 +193,54 @@
             height: 40px;
             width: 130px;
             border-radius: 10px;
-            background-color:rgba(255, 255, 255, 0.599);
+            background-color: rgba(255, 255, 255, 0.599);
             box-shadow: 0 0 20px #0077b6;
         }
-        #buttonlink:hover{
+
+        #buttonlink:hover {
             scale: 1.2;
-            
+
         }
-        
+
+        .section {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.189);
+            height: 500px;
+            width: 400px;
+            border-radius: 10px;
+            color: white;
+
+        }
+
+        #section1 {
+
+            left: 10%;
+            top: 20%;
+
+        }
+
+        #section2 {
+            left: 60%;
+            top: 20%;
+        }
+
+        .section h1 {
+            position: relative;
+            left: 30px;
+        }
+
+        .minisection {
+            display: flex;
+            padding-bottom:50px;
+        }
+        #contact img  {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            left: 280px;
+
+        }
+
 
         @keyframes animate {
             0% {
@@ -253,7 +295,7 @@
             <div class="home">
                 <h1>Welcome To My</h1><br>
                 <h1 class="rainbow-text">Portfolio Website</h1>
-                <div id="buttonlink"><a id="link"href="#about">see more</a></div>
+                <div id="buttonlink"><a id="link" href="#about">see more</a></div>
             </div>
         </a>
     </div>
@@ -316,7 +358,30 @@
         </div>
 
     </div>
-    <div class="main" id="contact"></div>
+    <div class="main" id="contact">
+        <div class="section" id="section1">
+            <h1 style="padding-bottom: 30px;">Contact me on:</h1>
+            <div class="minisection">
+                <h1>Gmail</h1>
+                <a href=""><img src="\contact_logo\gmail.png" alt="gmail_img"></a>
+            </div>
+            <div class="minisection">
+                <h1>Telegram</h1>
+                <a href=""><img src="\contact_logo\telegram.png" alt="telegram_logo"></a>
+            </div>
+            <div class="minisection">
+                <h1>Discord</h1>
+                <a href=""><img src="\contact_logo\discord.png" alt="discord_logo"></a>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <h1>Here my social's link</h1>
+            <div class="minisection">
+                <h1>Github</h1>
+                <a href=""><img src="\contact_logo\github.png" alt="github_logo"></a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
