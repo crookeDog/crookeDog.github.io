@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Francesco Savino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-blobs">
+        <div class="blob purple"></div>
+        <div class="blob pink"></div>
+        <div class="blob blue"></div>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact me</a> 
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container project-page-container">
+            <div id="grid-view" class="projects-grid-page">
+                <div class="project-card clickable-card" data-github="https://github.com/crookeDog/GymBot"
+                    data-live-demo="https://web.telegram.org/k/#@Gym_Brosky_bot" data-tech-list="Python,Telegram"
+                    data-description-full="A simple Telegram bot for managing personalized gym workout plans.">
+                    <div class="project-image">
+                        <img src="/project/image.png" alt="Aritmatika Solver">
+                    </div>
+                    <div class="project-content">
+                        <h4>Gymbot</h4>
+                        <p>A simple Telegram bot for managing personalized gym workout plans.</p>
+                    </div>
+                </div>
+
+                <div class="project-card clickable-card" data-github="https://github.com/crookeDog/GrumoAppula1-Agesci"
+                    data-live-demo="https://grumoappula1.com/" data-tech-list="HTML,CSS,JS"
+                    data-description-full="This repository contains the source code for a web application or website related to Grumo Appula 1 - AGESCI. It includes interactive elements, informational pages, and potentially a game.">
+                    <div class="project-image">
+                        <img src="project/image copy.png" alt="Grumo Appula Website">
+                    </div>
+                    <div class="project-content">
+                        <h4>Grumo Appula Website</h4>
+                        <p>Official website of Grumo Appula scout group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="detail-view" class="project-detail-view" style="display: none;">
+                <div class="detail-container two-columns">
+                    <div class="detail-left">
+                        <h2 id="detail-title">Project Title</h2>
+                        <p id="detail-desc">Full project description...</p>
+
+                        <div class="tech-section">
+                            <h3 class="tech-title">Technologies Used</h3>
+                            <div id="detail-tech-tags" class="tech-tags-container"></div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <button id="btn-back" class="btn-secondary">← Back</button>
+                            <a id="btn-live-demo" href="#" target="_blank" class="btn-primary live-demo-btn">Live Demo ↗</a>
+                            <a id="btn-github" href="#" target="_blank" class="btn-primary github-btn">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-right">
+                        <div class="detail-preview-box">
+                            <img id="detail-img" src="" alt="Project Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
